@@ -6,19 +6,32 @@ HTML KEY - Faraz Ahary
 
 ================================================================================
 THE BASICS:
-key
 Everything in html starts with a <> with a value inside, and most the time ends with a </> with a value after the /
 
 span = inline/short pieces of text, div = block ,
-these are useful for mantainability, and assigning id's/classes
+these are useful for mantainability, and assigning id's/classes.
+They're NOT necessary but seperate code into multiple blocks which are easier to read
 
 class for something that'll appear multiple times, id for something thatll appear once
 
-<p> </p> for paragraph
-<div id='enteranamehere'>
-<div class='enteranamehere'>
-<h> </h> for text
-<h insertnumberhere> </h insertnumberhere> for text size, smaller = bigger, u can only use 1-6
+PARAGRAPH =                 <p> </p>
+DIVIDERS WITH ID =          <div id='enteranamehere'>
+DIVIDERS WITH CLASS=        <div class='enteranamehere'>
+TEXT=                       <h> </h>
+TEXT SIZE=                  <h insertnumberhere> </h insertnumberhere> for text size, smaller = bigger, u can only use 1-6
+INSERTING IMAGES=           This is listed in the "other" section below.
+
+
+LINK=                       <a href="https://www.INSERT_A_WEBSITE_LINK">This is the phrase your link is displayed as</a>
+LINK,OPENS IN NEW TAB=      <a href="https://www.INSERT_A_WEBSITE_LINK" target="_blank">This is the phrase your link is displayed as</a>
+LINKING TO A FILE=          <a href="see-below-info_path_to_file" target="_blank">This is the phrase your link is displayed as</a>
+IMAGE WITH LINK=            <a href="https://www.INSERT_A_WEBSITE_LINK" target="_blank"><img src="INSERT-LINK-TO-IMAGE" alt="This is the phrase your link is displayed as"/></a>
+
+READ BELOW IF LINKING TO A FILE:
+Use ./filename.filetype if the local file is in the same folder as the website.
+Else use /folder/filename.filetype if its elsewhere.
+
+These should be the most useful commands, everything else is listed in the other section below.
 ================================================================================
 
 
@@ -118,9 +131,23 @@ unlike images, this needs to be closed/ended
 
 The text "video not supported", will only be shown if the video fails to load.
 ================================================================================
+LINKING TO CERTAIN PARTS OF THE SAME WEBSITE
+================================================================================
 
+As mentioned before, assign an id to something. This doesn't have to just be a div.
 
+EXAMPLE BELOW:
+<p id="top">This is the top of the page!</p>
 
+We've assigned an id to that PARAGRAPH
+
+Now we need to call it via a button
+
+<ol>
+  <li><a href="#top">Top</a></li>
+</ol>
+
+That list item will link to the #id when clicked. Href can be files, id's or links.
 ================================================================================
 --------------------------------------------------------------------------------
 OPTIONAL METADATA to place under <head> </head>
