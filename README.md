@@ -3,7 +3,7 @@ Made as i was learning it myself
 
 # Introduction
 
-Everything in html starts with a <> with a value inside, and most the time ends with a </> with a value after the /\
+Everything in html starts with a <> with a value inside, and most the time ends with a </> with a value after the /
 
 **Span** = inline/short pieces of text, **div** = block\
 These are useful for mantainability, and assigning id's/classes.\
@@ -18,7 +18,7 @@ General
 - Dividers with ID = ``<div id='enteranamehere'>``
 - Dividers with class = ``<div class='enteranamehere'>``
 - Text = ``<h> </h>``
-- Text Size = <h insertnumberhere> </h insertnumberhere> for text size, smaller = bigger, u can only use 1-6
+- Text Size = ``<h insertnumberhere> </h insertnumberhere> for text size, smaller = bigger, u can only use 1-6``
 
 Links
 - Link ``<a href="https://example.com">This is the phrase your link is displayed as</a>``
@@ -87,7 +87,7 @@ Inserting Images
 ``<img src="link-to-image-here" />``
 
 To insert an image just enter the link to the image after "src=", or the the name of the file if the image is stored locally
-You do NOT need to end this tag with </img>, since it has a / at the end inside the <>, it is considered -Self Closing-.
+You do not need to end this tag with </img>, since it has a / at the end inside the <>, it is considered -Self Closing-.
 
 Invisible Image Descriptions 
 ---
