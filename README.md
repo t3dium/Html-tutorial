@@ -200,5 +200,10 @@ Search engines rely on the below metadata, it will use these to display search r
 ``<meta name="description" content="website description here">``\
 ``<meta name="keywords" content="tag1, search-term-tag2, word3">``
 
+# Useful resources
+
+**Hardening - Reducing Bots:** https://www.ctrl.blog/entry/detect-non-browser-form-submission.html - has some pretty interesting methods on reducing bots. Swapping html attributes for example, which would have no effect on the user but confuse bots. Appending a #hash to the forms action url, etc.
+
+**Hardening - ensuring chromium browsers dont keylog password fields:** add ``spellcheck="false"`` to sensitive fields such as password input boxes. Else unless the user uses firefox, info would be in the hands of google/microsoft. Source: https://www.bleepingcomputer.com/news/security/google-microsoft-can-get-your-passwords-via-web-browsers-spellcheck/
 
 
