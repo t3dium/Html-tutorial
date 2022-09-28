@@ -202,7 +202,10 @@ Search engines rely on the below metadata, it will use these to display search r
 
 # Useful resources
 
-**Hardening - Reducing Bots:** https://www.ctrl.blog/entry/detect-non-browser-form-submission.html - has some pretty interesting methods on reducing bots. Swapping html attributes for example, which would have no effect on the user but confuse bots. Appending a #hash to the forms action url, etc.
+**Hardening - Reducing Bots:** https://www.ctrl.blog/entry/detect-non-browser-form-submission.html - has some pretty interesting methods on reducing bots. Swapping html attributes for example, which would have no effect on the user but confuse bots. Appending a #hash to the forms action url, etc. 
+
+**Hardening - Reducing Bots:** https://blog.cloudflare.com/turnstile-private-captcha-alternative/ is also a new zero-interaction alternative to captcha that might be worth considering.
+
 
 **Hardening - ensuring chromium browsers dont keylog password fields:** add ``spellcheck="false"`` to sensitive fields such as password input boxes. Else unless the user uses firefox, info would be in the hands of google/microsoft. Source: https://www.bleepingcomputer.com/news/security/google-microsoft-can-get-your-passwords-via-web-browsers-spellcheck/
 
